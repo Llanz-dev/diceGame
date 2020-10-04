@@ -49,6 +49,10 @@ input[type="button"]:hover{
   background-color:  #4eb3cc;
 }
 
+.infos:hover{
+  background-color:  #c4cc4e;
+}
+
 .restartBtn:hover{
   background-color: #4cdf78;
 }
