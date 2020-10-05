@@ -14,20 +14,21 @@
 
       <div class="dice">
         <p id="playerOne">Player 1</p>
-        <p>Score: <span>0</span></p>
+        <p>Score: <span id="oneScore"></span></p>
         <img id="img1" src="images/dice6.png">
       </div>
 
       <div class="dice">
         <p id="playerTwo">Player 2</p>
-        <p>Score: <span>0</span></p>
+        <p>Score: <span id="twoScore"></span></p>
         <img id="img2" src="images/dice6.png">
       </div>
     </div>
 
     <footer>
-      <input class="restartBtn" onclick="restart()" type="button" value="Restart">
-      <input class="startBtn" onclick="start()" type="button" value="Start">
+      <input class="clearBtn" onclick="clearFun()" type="button" value="Clear">
+      <input class="restartBtn" onclick="restartFun()" type="button" value="Restart">
+      <input class="startBtn" onclick="startFun()" type="button" value="Start">
       <a href="/diceGame/infos.html"><input class="infos" type="button" value="Info"></a>
     </footer>
   </body>
