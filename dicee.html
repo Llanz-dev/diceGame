@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Dicee</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dicee.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
     <link rel="icon" href="https://img.icons8.com/windows/50/000000/dice.png">
   </head>
@@ -14,11 +14,13 @@
 
       <div class="dice">
         <p id="playerOne">Player 1</p>
+        <p>Score: <span>0</span></p>
         <img id="img1" src="images/dice6.png">
       </div>
 
       <div class="dice">
         <p id="playerTwo">Player 2</p>
+        <p>Score: <span>0</span></p>
         <img id="img2" src="images/dice6.png">
       </div>
     </div>
@@ -26,9 +28,9 @@
     <footer>
       <input class="restartBtn" onclick="restart()" type="button" value="Restart">
       <input class="startBtn" onclick="start()" type="button" value="Start">
-      <a href="/infos.html"><input class="infos" type="button" value="Info"></a>
+      <a href="/diceGame/infos.html"><input class="infos" type="button" value="Info"></a>
     </footer>
   </body>
 
-  <script src="index.js"></script>
+  <script src="dicee.js"></script>
 </html>

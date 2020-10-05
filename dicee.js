@@ -1,4 +1,5 @@
-function capitalizeFirstLetter(string) {
+    // Capitalize
+    function capitalizeFirstLetter(string) {
     let arr = string.split(' ');
     let cap = arr.map(i => {
        return i[0].toUpperCase() + i.slice(1).toLowerCase()
@@ -9,10 +10,21 @@ function capitalizeFirstLetter(string) {
     var secondPlayer = document.getElementById("playerTwo").innerHTML = capitalizeFirstLetter(localStorage.getItem("player2", secondPlayer));
     firstPlayer = capitalizeFirstLetter(firstPlayer);
     secondPlayer = capitalizeFirstLetter(secondPlayer);
+
+    // Reload Page
     function restart(){
         location.reload(true);
+        localStorage.clear();
     }
+    // Start function
+
+
     function start(){
+        var i = 0;
+        while(i < 10){
+            document.getElementById("span").value = 0;
+
+        }
         var number1 = Math.random() * 6 + 1;
         var numberRound1 = Math.floor(number1);
         var displayResult1 = "images/dice" + numberRound1 + ".png";
