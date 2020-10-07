@@ -1,3 +1,4 @@
+
     let playerOne = 0;
     document.getElementById("oneScore").innerHTML =  "10/" + playerOne;
     let playerTwo = 0;
@@ -18,12 +19,17 @@
         location.reload(true);
         localStorage.clear();
     }
+
     // Reload Page
     function restartFun(){
         location.reload(true);
     }
     // Start function
-    function startFun(){        
+    if(typeof firstPlayer === 'undefined' && typeof secondPlayer === 'undefined') {
+        const startBtn = document.getElementsByClassName("startBtn")[0];
+        startBtn.disabled = true;
+    } else { 
+    function startFun(){    
         var number1 = Math.random() * 6 + 1;
         var numberRound1 = Math.floor(number1);
         var displayResult1 = "images/dice" + numberRound1 + ".png";
@@ -56,3 +62,4 @@
         }   
 
     }
+}
