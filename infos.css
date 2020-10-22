@@ -1,5 +1,22 @@
 body{
     background-color: #393E46;
+    font-family: 'Segoe UI', sans-serif;
+}
+.img-container{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #4ECCA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: #4ECCA3;
+}
+img{
+    display: none;
+    width: 200px;
+    height: 200px;
 }
 .container{
     width: 70%;
@@ -7,7 +24,7 @@ body{
     text-align: center;
 }
 h1 {
-    margin: 30px;
+    margin: 30px 30px 7% 30px ;
     font-family: 'Lobster', cursive;
     text-shadow: 5px 0 #232931;
     font-size: 4rem;
@@ -19,12 +36,13 @@ p {
     font-family: 'Indie Flower', cursive;
 }
 /* Inputs */
-form{
+.form-group{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 35%;
-    margin: 0 auto;
+    flex-direction: row;
+}
+input[type="file"]{
+    margin: 7% 0 3% 0;
+    width: 90%;
 }
 input[type="submit"]{
     width: 8rem;
@@ -47,3 +65,10 @@ input[type="text"]{
     font-size: 1rem;
     margin: .5rem 0;
 }
+.input-names{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25%;
+    margin: 2rem auto;
+}   

@@ -11,19 +11,30 @@
     <div class="container">
     <h1>Welcome to the Game of Dice!</h1>
     <form action="dicee.html" autocomplete="off">
+    <div class="form-group">
+    <div class="input-names">
+    <div class="img-container">
+        <span class="previewText1">Image Display</span>
+        <img src="" alt="player2-img" id="playerOneIMG">
+    </div>
+        <input type="file" name="" id="inputFile1" class="inputFile" accept=".jpg, .png, .jpeg">
         <input type="text" placeholder="player 1 name" id="playerOne" minlength="2"  maxlength="10" required>
+    </div>
+    <div class="input-names">
+    <div class="img-container">
+        <span class="previewText2">Image Display</span>
+        <img src="" alt="player1-img" id="playerTwoIMG">
+    </div>
+        <input type="file" name="" id="inputFile2" class="inputFile" accept=".jpg, .png, .jpeg">
         <input type="text" placeholder="player 2 name" id="playerTwo" minlength="2"  maxlength="10" required>
-    <input type="submit" value="Submit" onclick="playersName()">
+    </div>
+    
+</div>
+<div class="button-container">
+    <input type="submit" value="Submit">
+</div>
     </form>
     </div>
-    <script>
-        function playersName(){
-            var firstPlayer = document.getElementById("playerOne").value;
-            var secondPlayer = document.getElementById("playerTwo").value;
-            localStorage.setItem("player1", firstPlayer);
-            localStorage.setItem("player2", secondPlayer);
-            return false;
-        }
-    </script>
+    <script src="infos.js"></script>
 </body>
 </html>
