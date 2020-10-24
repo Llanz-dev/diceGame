@@ -1,6 +1,14 @@
+const firstPlayer_img = document.getElementById("playerOne_img");
+const secondPlayer_img = document.getElementById("playerTwo_img");
+window.addEventListener("DOMContentLoaded", function(){    
+    const firstURL_img = localStorage.getItem("firstImageData");
+    firstPlayer_img.setAttribute("src", firstURL_img);
+    const secondURL_img = localStorage.getItem("secondImageData");
+    secondPlayer_img.setAttribute("src", secondURL_img);
+});
+
 const inputFile1 = document.getElementById("playerOneIMG");
 const inputFile2 = document.getElementById("playerTwoIMG");
-
 let playerOne = 0;
 document.getElementById("oneScore").innerHTML = "10/" + playerOne;
 let playerTwo = 0;
@@ -9,7 +17,7 @@ document.getElementById("twoScore").innerHTML = "10/" + playerTwo;
 function capitalizeFirstLetter(string) {
     let arr = string.split(' ');
     let cap = arr.map(i => {
-        return i[0].toUpperCase() + i.slice(1).toLowerCase()
+        return i[0].toUpperCase() + i.slice(1).toLowerCase();
     });
     return cap.join(' ');
 }

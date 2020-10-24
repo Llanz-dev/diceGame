@@ -1,6 +1,7 @@
 body{
     background-color: #393E46;
     font-family: 'Segoe UI', sans-serif;
+    margin: -2rem auto;
 }
 .img-container{
     width: 200px;
@@ -9,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: .5rem;
 }
 span{
     color: #4ECCA3;
@@ -17,6 +19,7 @@ img{
     display: none;
     width: 200px;
     height: 200px;
+    border-radius: .5rem;
 }
 .container{
     width: 70%;
@@ -24,7 +27,7 @@ img{
     text-align: center;
 }
 h1 {
-    margin: 30px 30px 7% 30px ;
+    margin: 30px 30px 5% 30px ;
     font-family: 'Lobster', cursive;
     text-shadow: 5px 0 #232931;
     font-size: 4rem;
